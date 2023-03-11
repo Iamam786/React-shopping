@@ -1,15 +1,22 @@
 .App {
   text-align: center;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.bimage{
+  background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/5523db5a-e2b2-497f-a88b-61f175c3dbad/eb90437e-a876-47c3-a138-ca27772a4d2a/IN-en-20230306-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+  height: 75vh;
+  width: 100%;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 30s linear;
   }
 }
 
