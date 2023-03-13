@@ -9,10 +9,18 @@ import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
 import { NetflixRegisterComponent } from './Components/NetflixComponentRegis';
 import DataBindingComponent from './Components/DataBindingComponent';
 import DataBindingFake from './Components/DataBindingFake';
+import DataBindingComponents from './Components/DataBindigComponent';
+import NestedComponent from './Components/NestedComponent';
+import DataBindigWithLocalResoucres from './Components/DataBindigWithLOcalResoucre';
+import TwoBindingComponents from './Components/TwoBinding';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <TwoBindingComponents/>
+    <DataBindigWithLocalResoucres />
+    <NestedComponent />
+    <DataBindingComponents></DataBindingComponents>
     <DataBindingFake />
     <DataBindingComponent></DataBindingComponent>
 
