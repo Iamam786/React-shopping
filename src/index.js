@@ -14,10 +14,14 @@ import NestedComponent from './Components/NestedComponent';
 import DataBindigWithLocalResoucres from './Components/DataBindigWithLOcalResoucre';
 import TwoBindingComponents from './Components/TwoBinding';
 import StateDemoComponent from './Components/StateDemoComponent';
+import StateFunctionComponent from './Components/DataBindigUsingStatefunctionComp';
+import StyleBindingComponent from './Components/StyleBindingComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <StyleBindingComponent/>
+   <StateFunctionComponent/>
     <StateDemoComponent/>
     <TwoBindingComponents/>
     <DataBindigWithLocalResoucres />
