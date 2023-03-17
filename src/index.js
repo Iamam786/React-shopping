@@ -16,10 +16,12 @@ import TwoBindingComponents from './Components/TwoBinding';
 import StateDemoComponent from './Components/StateDemoComponent';
 import StateFunctionComponent from './Components/DataBindigUsingStatefunctionComp';
 import StyleBindingComponent from './Components/StyleBindingComponent';
+import PropertiesDemoComponent from './Components/PropertiesDemoComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <PropertiesDemoComponent/>
     <StyleBindingComponent/>
    <StateFunctionComponent/>
     <StateDemoComponent/>
