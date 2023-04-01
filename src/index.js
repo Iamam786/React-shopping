@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { LoginComponent } from './Components/loginComponents';
+// import { LoginComponent } from './Components/loginComponents';
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
-import { NetflixRegisterComponent } from './Components/NetflixComponentRegis';
 import DataBindingComponent from './Components/DataBindingComponent';
 import DataBindingFake from './Components/DataBindingFake';
 import DataBindingComponents from './Components/DataBindigComponent';
@@ -17,10 +16,12 @@ import StateDemoComponent from './Components/StateDemoComponent';
 import StateFunctionComponent from './Components/DataBindigUsingStatefunctionComp';
 import StyleBindingComponent from './Components/StyleBindingComponent';
 import PropertiesDemoComponent from './Components/PropertiesDemoComponent';
+import NetflixIndexComponent from './Netflix/NetflixIndexComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <NetflixIndexComponent/>
     <PropertiesDemoComponent/>
     <StyleBindingComponent/>
    <StateFunctionComponent/>

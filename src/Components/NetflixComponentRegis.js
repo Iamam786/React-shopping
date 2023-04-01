@@ -5,7 +5,7 @@ export class NetflixRegisterComponent extends React.Component{
     render(){
         return(
         <>
-        <div className="">
+        <div className="d-flex justify-content-center">
             <div>
                 <p className="">{this.title}</p>
                 <div className="input-group input-group-lg">

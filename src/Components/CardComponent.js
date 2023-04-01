@@ -1,5 +1,7 @@
 import React from "react";
 
+// 24th  November lecture
+
 export default function CardComponent(props) {
     return (
         <div className="card w-25 m-2">
