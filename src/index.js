@@ -18,12 +18,15 @@ import StyleBindingComponent from './Components/StyleBindingComponent';
 import PropertiesDemoComponent from './Components/PropertiesDemoComponent';
 import NetflixIndexComponent from './Netflix/NetflixIndexComponent';
 import NasaMarsPhotosComponent from './Components/NasaMarsPhotosComponent';
+import InstaLoginComponent from './Components/insta/InstaLoginComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <NasaMarsPhotosComponent/>
 
+<InstaLoginComponent/>
+{/*}
+    <NasaMarsPhotosComponent/>
     <NetflixIndexComponent/>
     <PropertiesDemoComponent/>
     <StyleBindingComponent/>
@@ -35,7 +38,7 @@ root.render(
     <DataBindingComponents></DataBindingComponents>
     <DataBindingFake />
      <DataBindingComponent></DataBindingComponent> 
- 
+*/}
 
   </React.StrictMode>
 );
