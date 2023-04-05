@@ -2,13 +2,7 @@ import React from "react";
 
 export default class EventDemoClassComponent extends React.Component {
 
-    // constructor(){
-    //     super();
-    //     this.state = {
-    //         msg = ''
-    //     }
-
-    // }
+    
     InsertClick(e){
        
         document.write(`
