@@ -20,10 +20,13 @@ import NetflixIndexComponent from './Netflix/NetflixIndexComponent';
 import NasaMarsPhotosComponent from './Components/NasaMarsPhotosComponent';
 import InstaLoginComponent from './Components/insta/InstaLoginComponent';
 import EventDemoComponent from './Components/EventInFunctionComponent';
+import EventDemoClassComponent from './Components/EventDemoClassComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+
+    <EventDemoClassComponent/>
 <EventDemoComponent/>
 <InstaLoginComponent/>
 {/*}
