@@ -24,8 +24,8 @@ export default function InstaLoginComponent() {
                         <span className="mx-3">OR</span>
                         <hr />
                     </div>
-                    <div className="mt-3 d-flex justify-content-center">
-                        <span className="bi bi-facebook" />
+                    <div className="mt-3 d-flex align-items-center justify-content-center">
+                        <span className="bi bi-facebook fs-5" />
                         <span className="ms-2 text-primary">Login in with Facebook</span>
                     </div>
                     <div className="my-3 text-center">
