@@ -22,11 +22,13 @@ import InstaLoginComponent from './Components/insta/InstaLoginComponent';
 import EventDemoComponent from './Components/EventInFunctionComponent';
 import EventDemoClassComponent from './Components/EventDemoClassComponent';
 import EventDemoClassConstructorComponent from './Components/eventinClassSuperConstructor';
+import EventWithoutBindConstructorComponent from './Components/EventwithouUsingBindMethod';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
+<EventWithoutBindConstructorComponent/>
 <EventDemoClassConstructorComponent/>
     <EventDemoClassComponent/>
 <EventDemoComponent/>
