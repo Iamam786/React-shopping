@@ -28,14 +28,16 @@ import LifeCycleDemoComponent from './Components/LifeCycleDemoComponent';
 import LifeCycleYoutube from './Components/LifeCycleYoutube';
 import ProductComponent from './Components/LifeCycleComponentNotes/ProductComponent';
 import FuctionLifecycleComponent from './Components/FuctionLifecycleComponent';
+import ContextDemoComponent from './Components/Context/ContextDemoComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
+    <ContextDemoComponent/>
+{/*}
     <FuctionLifecycleComponent/>
 <InstaLoginComponent/>
-{/*}
 <ProductComponent/>
 <LifeCycleDemoComponent/>
 <LifeCycleYoutube color='white'/>
