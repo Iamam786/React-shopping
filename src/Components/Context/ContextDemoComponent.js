@@ -27,6 +27,9 @@ export default function ContextDemoComponent() {
             Email: userDetails.Email
         })
     }
+    // function HomeClick(e) {
+    //     e.target.UserName;
+    // }
 
     return (
         <userDetailsContext.Provider value={userDetails}>
@@ -48,13 +51,26 @@ export default function ContextDemoComponent() {
     )
 }
 
-function HomeComponent() {
-    let userdetails = useContext(userDetailsContext);
+function HomeComponent(props) {
+    // let userdetails = useContext(userDetailsContext);
+    const [userDetails, setUserDetails] = useState(userDetailsContext);
+
+    function HandleUpdate() {
+        setUserDetails({ UserName: 'Ali', Email:'abdul@gmail.com'});
+        alert('Update Clicked')
+    }
     return (
-        <div>
-            Home Components - {userdetails.UserName}
-            <NavbarComponent />
-        </div>
+
+        <userDetailsContext.Provider value={userDetails}>
+            <div>
+                <div>
+                    Home Components - {userDetails.UserName}
+                </div>
+                <button onClick={HandleUpdate}>Update Name</button>
+
+                <NavbarComponent />
+            </div>
+        </userDetailsContext.Provider>
 
     )
 }
