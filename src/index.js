@@ -23,17 +23,27 @@ import EventDemoComponent from './Components/EventInFunctionComponent';
 import EventDemoClassComponent from './Components/EventDemoClassComponent';
 import EventDemoClassConstructorComponent from './Components/eventinClassSuperConstructor';
 import EventWithoutBindConstructorComponent from './Components/EventwithouUsingBindMethod';
+import KeyDemoComponent from './Components/KeyboardEvents';
+import LifeCycleDemoComponent from './Components/LifeCycleDemoComponent';
+import LifeCycleYoutube from './Components/LifeCycleYoutube';
+import ProductComponent from './Components/LifeCycleComponentNotes/ProductComponent';
+import FuctionLifecycleComponent from './Components/FuctionLifecycleComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
+    <FuctionLifecycleComponent/>
+<InstaLoginComponent/>
+{/*}
+<ProductComponent/>
+<LifeCycleDemoComponent/>
+<LifeCycleYoutube color='white'/>
+<KeyDemoComponent/>
 <EventWithoutBindConstructorComponent/>
 <EventDemoClassConstructorComponent/>
     <EventDemoClassComponent/>
 <EventDemoComponent/>
-<InstaLoginComponent/>
-{/*}
     <NasaMarsPhotosComponent/>
     <NetflixIndexComponent/>
     <PropertiesDemoComponent/>
