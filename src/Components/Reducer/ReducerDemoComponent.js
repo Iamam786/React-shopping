@@ -24,6 +24,7 @@ export default function ReducerDemoComponent() {
     const [state, dispatch] = useReducer(reducer, initialState);
     useEffect(() => {
         alert('Component is Mounted');
+        alert((navigator.cookieEnabled==true?"You can Login":"You can enable login becasue cookies disabled "))
         return ( )=>{
             alert("Component is UnMounted")
         }
