@@ -32,14 +32,20 @@ import ContextDemoComponent from './Components/Context/ContextDemoComponent';
 import ReducerDemoComponent from './Components/Reducer/ReducerDemoComponent';
 import { CookiesProvider } from 'react-cookie';
 import LoginComponent from './Components/LoginComponent';
+import FormDeomComponent from './Components/FormDeomComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+
+    <CookiesProvider>
+      <FormDeomComponent />
+    </CookiesProvider>
+    {/*
+import formDeomComponent from './Components/formDeomComponent';
     <CookiesProvider>
       <LoginComponent />
     </CookiesProvider>
-    {/*}
 <ReducerDemoComponent/>
 <ContextDemoComponent/>
     <FuctionLifecycleComponent/>
