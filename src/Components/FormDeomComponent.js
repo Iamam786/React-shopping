@@ -8,10 +8,14 @@ export default function FormDeomComponent() {
   const [City, setCity] = useState();
   const [Stock, setStock] = useState(false);
 
+  //form demo ke liye
+
   function SubmitClick(e) {
     e.preventDefault();
+      
     document.write(`Name=${Name}<br>Price=${Price}<br>City=${City}<br>Stock=${(Stock === true) ? "Avilable" : "Out Of Stock"}`);
   }
+
 
   return (
     <div className='container-fluid'>
@@ -36,8 +40,9 @@ export default function FormDeomComponent() {
             <input type='checkbox' checked={Stock} onChange={(e) => { setStock(e.target.checked) }} className='form-check-input' />Availalable
           </dd>
         </dl>
-        <button type='submit' className='btn btn-primary'>Register</button>
-        <button type='reset' className='btn btn-primary'>Cancle</button>
+        <button type='submit' name='register' className='btn btn-primary'>Register</button>
+        <button type='submit' name='post' className='btn btn-primary'>Post</button>
+      
       </form>
 
     </div>

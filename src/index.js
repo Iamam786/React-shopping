@@ -33,17 +33,20 @@ import ReducerDemoComponent from './Components/Reducer/ReducerDemoComponent';
 import { CookiesProvider } from 'react-cookie';
 import LoginComponent from './Components/LoginComponent';
 import FormDeomComponent from './Components/FormDeomComponent';
+import FormikDemoComponents from './Components/FormikDemoComponents';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
     <CookiesProvider>
-      <FormDeomComponent />
+      <FormikDemoComponents/>
     </CookiesProvider>
     {/*
 import formDeomComponent from './Components/formDeomComponent';
     <CookiesProvider>
+      <FormDeomComponent />
+
       <LoginComponent />
     </CookiesProvider>
 <ReducerDemoComponent/>
