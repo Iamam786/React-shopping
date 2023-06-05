@@ -1,9 +1,9 @@
-import { Formik, useFormik } from "formik";
+import {  useFormik } from "formik";
 import React from 'react';
 
 function ValidateUser(userdetails) {
     const errors = {};
-    if (userdetails.Name == "") {
+    if (userdetails.Name === "") {
         errors.Name = "User Name Required";
     }
     if (userdetails.Email.indexOf("@") < 2) {
