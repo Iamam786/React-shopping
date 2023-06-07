@@ -24,7 +24,7 @@ export default function YupDemoComponent() {
         },
         validationSchema: yup.object({
             Name: yup.string().required('Name is requird').min(2, "Name too Short...").max(6, "Name too long.."),
-            Email: yup.string().required('Email is required'),
+            Email: yup.string().required('Email is required').email("invalid email"),
             Age: yup.number().required('Age Required')
         }),
         onSubmit: values => {
