@@ -35,17 +35,19 @@ import LoginComponent from './Components/LoginComponent';
 // import FormDeomComponent from './Components/FormDeomComponent';
 import FormikDemoComponents from './Components/FormikDemoComponents';
 import ValidationDemoComponent from './Components/ValidationDemoComponent';
+import YupDemoComponent from './Components/YupDemoComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
     <CookiesProvider>
-      <ValidationDemoComponent/>
+      <YupDemoComponent/>
     </CookiesProvider>
     {/*
 import formDeomComponent from './Components/formDeomComponent';
     <CookiesProvider>
+      <ValidationDemoComponent/>
     
     <FormikDemoComponents/>
     <FormDeomComponent />
